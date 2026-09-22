@@ -1,7 +1,7 @@
 # OnePump Septic — Google Ads landing pages
 
-**Read this before editing anything.** Built 2026-09-22 (local only — NOT pushed/deployed yet).
-Planned host: **onepumpseptic.vercel.app** (repo `customleadz-sites/onepumpseptic`, Vercel project `onepumpseptic`, cleanUrls).
+**Read this before editing anything.** Built + DEPLOYED 2026-09-22.
+**LIVE: https://onepumpseptic.vercel.app** (repo `customleadz-sites/onepumpseptic`, git repo lives inside this `site/` folder, Vercel project `onepumpseptic` / prj_Claj39a8l4f8Z3PeaLxJHNAxhoza, team custom-leadz, cleanUrls). Push to `main` = production deploy.
 Client brief: `../info/client-brief.md`. Campaign: `../google-ads/campaigns/launch-plan.md` + `build-spec.json`.
 
 ## The pages
@@ -39,5 +39,5 @@ Brand pulled from onepumpseptic.com (navy `#0C3050`, red `#B5202A`, cream, Barlo
 - Initial payload on `/` ≈ 200 KB (hero 104 KB mobile / 306 KB desktop). Everything below the fold is `loading="lazy"`.
 - Local review: double-click `Preview Site.command` (gitignored) → http://localhost:8765. If 8765 is busy, a stale preview server from another client is probably running — `lsof -iTCP:8765` and kill it.
 
-## Deploy (when Kennedy says go — read the git-deploy skill first)
-Init git inside `site/`, repo `customleadz-sites/onepumpseptic`, Vercel project `onepumpseptic` → onepumpseptic.vercel.app. Then: Tag Assistant check, test call (should show a Google forwarding number for an ad-tagged visit), test form, then enable campaign 24273051777.
+## Deploy (read the git-deploy skill first)
+Deployed 2026-09-22. To ship a change: edit → `git add <files>` → commit as Kennedy → push `main` (keychain token per git-deploy) → Vercel auto-deploys. Bump `?v=` on `style.css`/`main.js` links when they change. Still to do before enabling campaign 24273051777: Tag Assistant check on the live URL, a test call from an ad-tagged visit (forwarding number should appear), one email-button tap registering as "Email click".
